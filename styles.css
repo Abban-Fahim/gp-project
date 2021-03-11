@@ -1,0 +1,53 @@
+h1 {
+    font-size: 40px;
+    color: cyan;
+}
+
+h3 {
+    font-size: 50px;
+    color: cyan;
+    margin: 10px 0 5px 0;
+}
+
+a {
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: cyan !important;
+}
+
+body {
+    background-color: #3b3d53;
+}
+
+.nav-item {
+    width: max-content;
+}
+
+.carousel,
+.carousel-inner {
+    height: 300px;
+}
+
+.carousel-item {
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+    height: 100%;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+    color: white;
+}
+
+.green {
+    background-color: greenyellow;
+}
