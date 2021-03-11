@@ -1,25 +1,27 @@
 h1 {
     font-size: 40px;
-    color: cyan;
+    color: #48C9B0;
 }
 
 h3 {
     font-size: 50px;
-    color: cyan;
+    color: #E74C3C;
     margin: 10px 0 5px 0;
 }
 
 a {
     color: white !important;
+    margin: 0 10px;
 }
 
 a:hover {
     text-decoration: underline;
-    color: cyan !important;
+    color: #48C9B0 !important;
 }
 
 body {
     background-color: #3b3d53;
+    background-image: url("https://www.transparenttextures.com/patterns/white-diamond.png");
 }
 
 .nav-item {
