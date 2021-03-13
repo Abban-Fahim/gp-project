@@ -6,16 +6,17 @@ h1 a {
     padding: inherit;
 }
 
-.material-icons{
+.material-icons {
     font-size: 40px;
     margin: 0 12px;
     z-index: 3;
     position: absolute;
-    left: 33px;
-    top: 30px;
+    left: 22px;
+    top: -1px;
 }
-.public{
-    margin: 0;
+
+.public {
+    margin-top: 12px;
     z-index: 1;
     position: static;
     color: #e73c75;
@@ -73,7 +74,7 @@ body {
     background-color: greenyellow;
 }
 
-form{
+form {
     text-align: center;
     background-color: #48C9B0;
     width: 80%;
@@ -82,14 +83,14 @@ form{
     border-radius: 45px;
 }
 
-.form-control{
+.form-control {
     background: inherit;
     border: none;
     margin: 10px;
     border-radius: inherit;
 }
 
-label{
+label {
     display: block;
     margin: 17px;
     font-family: 'Montserrat', sans-serif;
