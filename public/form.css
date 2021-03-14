@@ -1,0 +1,42 @@
+form {
+    text-align: center;
+    background-color: #48C9B0;
+    width: 80%;
+    margin: 45px auto;
+    display: block;
+    border-radius: 45px;
+}
+
+.form-control {
+    background: inherit;
+    border: none;
+    margin: 10px;
+    border-radius: inherit;
+}
+
+label {
+    margin: 17px;
+}
+
+input {
+    width: 80%;
+}
+
+.inputBox {
+    text-align: left;
+}
+
+@media (max-width: 767.98px) {
+    .label {
+        text-align: center;
+    }
+    .inputBox {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .label {
+        text-align: right;
+    }
+}

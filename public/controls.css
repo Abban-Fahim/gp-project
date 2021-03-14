@@ -1,0 +1,20 @@
+.videoBox {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+video {
+    width: 60%;
+}
+
+.controls {
+    background-color: #3b3d53;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.controls span:hover {
+    color: #e73c75;
+}
