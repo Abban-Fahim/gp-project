@@ -2,6 +2,8 @@
     text-align: center;
     width: 100%;
     margin-top: 40px;
+    position: relative;
+    float: left;
 }
 
 video {
@@ -17,4 +19,11 @@ video {
 
 .controls span:hover {
     color: #e73c75;
+}
+
+.replayScreen {
+    background-color: #3b3d5375;
+    position: absolute;
+    float: left;
+    width: 60%;
 }

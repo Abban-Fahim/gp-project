@@ -7,13 +7,40 @@
     </div>
 
     <form action="/form" method="post">
-        <div class="form-control">
-            <div class="row justify-content-around">
+        <div class="container-fluid">
+            <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-6 label">
                     <label for="email">Email address</label>
                 </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 align-self-center inputBox">
+                <div class="col-md-8 col-lg-8 col-sm-6 align-self-center inputBox">
                     <input type="email" name="email" id="email">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container-fluid">
+                    <h5>How often do you excercise?</h5>
+                </div>
+
+                <div class="align-self-center">
+                    <div class="form-check">
+                        <input type="radio" name="amontOfEx" id="1" class="form-check-input">
+                        <label for="1" class="form-check-label">Once a month</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="amontOfEx" id="2" class="form-check-input">
+                        <label for="2" class="form-check-label">Once a week</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="amontOfEx" id="3" class="form-check-input">
+                        <label for="3" class="form-check-label">A few times a week</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="amontOfEx" id="4" class="form-check-input">
+                        <label for="4" class="form-check-label">Everyday</label>
+                    </div>
                 </div>
             </div>
         </div>

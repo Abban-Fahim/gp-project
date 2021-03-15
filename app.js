@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.use('/file', express.static('static'))
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('home', { cache: true, __filename: 'home' });
 });
 
 app.route('/form')
@@ -22,6 +22,6 @@ app.route('/video')
     .get((req, res) => res.render('video'));
 
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(3000, () => {
     console.log('started!')
 });

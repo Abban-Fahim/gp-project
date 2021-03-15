@@ -4,22 +4,41 @@ form {
     width: 80%;
     margin: 45px auto;
     display: block;
-    border-radius: 45px;
+    border-radius: 15px;
 }
 
-.form-control {
-    background: inherit;
-    border: none;
-    margin: 10px;
-    border-radius: inherit;
+h5 {
+    display: block;
+    margin: 25px;
+    margin-top: 25px;
 }
 
-label {
+.form-check-label {
+    float: left;
+}
+
+.form-check {
+    margin: 12px;
+}
+
+label[for=email] {
     margin: 17px;
 }
 
-input {
+input[type=email] {
     width: 80%;
+    background-color: #e73c75;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+input:focus,
+input:focus-visible,
+input:focus-within {
+    box-shadow: none;
+    border: 2px solid #3b3d53;
+    background-color: #992149;
 }
 
 .inputBox {

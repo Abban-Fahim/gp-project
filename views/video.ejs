@@ -4,6 +4,9 @@
 
     <div class="videoBox container-fluid">
         <video src="file/example.mp4" autoplay></video>
+        <div class="replayScreen">
+            <span class="material-icons replay">replay</span>
+        </div>
         <div class="controls">
             <span class="material-icons backward">replay_10</span>
             <span class="material-icons playBtn">play_arrow</span>
@@ -42,7 +45,11 @@
             } catch (any) {
                 video.webkitRequestFullscreen();
             }
-        })
+        });
+
+        video.onended() = () => {
+
+        }
     </script>
 
     </html>
