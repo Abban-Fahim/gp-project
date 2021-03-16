@@ -7,6 +7,14 @@ form {
     border-radius: 15px;
 }
 
+form {
+    border: #992149 3px dashed;
+}
+
+form .control {
+    border-top: #992149 3px dashed;
+}
+
 h5 {
     display: block;
     margin: 25px;
@@ -30,7 +38,6 @@ input[type=email] {
     background-color: #e73c75;
     border: none;
     border-radius: 10px;
-    margin-bottom: 25px;
 }
 
 input:focus,
@@ -43,6 +50,21 @@ input:focus-within {
 
 .inputBox {
     text-align: left;
+}
+
+.btnBox {
+    margin: 10px;
+}
+
+.btn {
+    border: none;
+    background-color: #e73c75;
+    width: 40%;
+    margin: 7px;
+}
+
+.btn[type=reset] {
+    background-color: #3b3d53;
 }
 
 @media (max-width: 767.98px) {
