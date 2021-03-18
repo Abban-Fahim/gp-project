@@ -24,6 +24,6 @@ app.route('/form')
 app.route('/video')
     .get((req, res) => res.render('video'));
 
-app.listen(3001 || process.env.PORT, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log('started!')
 });

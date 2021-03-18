@@ -22,8 +22,18 @@ video {
 }
 
 .replayScreen {
-    background-color: #3b3d5375;
     position: absolute;
-    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3b3d5350;
     width: 60%;
+    height: inherit;
+}
+
+.replay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
