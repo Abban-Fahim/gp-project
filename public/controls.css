@@ -17,7 +17,8 @@ video {
     margin: 0 auto;
 }
 
-.controls span:hover {
+.controls span:hover,
+.replay:hover {
     color: #e73c75;
 }
 
@@ -26,9 +27,9 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #3b3d5350;
     width: 60%;
     height: inherit;
+    display: none;
 }
 
 .replay {
@@ -36,4 +37,5 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #e73c7595;
 }
