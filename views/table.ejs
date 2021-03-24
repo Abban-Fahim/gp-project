@@ -1,0 +1,27 @@
+<%- include('header') %>
+
+    <table class="table table-dark table-striped">
+        <thead>
+            <th scope="col">Email</th>
+            <th scope="col">Amount of excercise</th>
+            <th scope="col">Something else</th>
+        </thead>
+        <tbody>
+            <% data.forEach(doc => { %>
+                <tr>
+                    <td>
+                        <%= doc.response.email %>
+                    </td>
+                    <td>
+                        <%= doc.response['amontOfEx '] %>
+                    </td>
+                    <td>
+                        <%= doc.response['something '] %>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+    </body>
+
+    </html>

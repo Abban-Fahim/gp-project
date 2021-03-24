@@ -36,9 +36,9 @@ app.route('/form')
 app.route('/video')
     .get((req, res) => res.render('video'));
 
-app.get('/admin/data/', (req, res) => {
+app.get('/data', (req, res) => {
     Response.find((err, docs) => {
-        res.json(docs);
+        res.render('table', { data: docs });
     });
 });
 
