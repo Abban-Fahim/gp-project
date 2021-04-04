@@ -54,7 +54,7 @@ a:hover {
 
 body {
     background-color: #3b3d53;
-    background-image: url("https://www.transparenttextures.com/patterns/white-diamond.png");
+    background-image: url("./white-diamond.png");
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -82,6 +82,10 @@ body {
 .purple {
     background-color: purple;
     color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    justify-content: center;
+    padding: 12px;
 }
 
 .green {

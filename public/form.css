@@ -5,10 +5,11 @@ form {
     margin: 45px auto;
     display: block;
     border-radius: 15px;
+    border: #992149 3px dashed;
 }
 
-form {
-    border: #992149 3px dashed;
+.control:first-child {
+    border-top: none;
 }
 
 form .control {

@@ -7,26 +7,6 @@
     </div>
 
     <form action="/form" method="post">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 col-lg-4 col-sm-6 label">
-                    <h5>Email address</h5>
-                </div>
-                <div class="col-md-8 col-lg-8 col-sm-6 align-self-center inputBox">
-                    <input type="email" name="email" class="text-field">
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid control">
-            <div class="row">
-                <div class="col-md-4 col-lg-4 col-sm-6 label">
-                    <h5>What are your hobbies?</h5>
-                </div>
-                <div class="col-md-8 col-lg-8 col-sm-6 align-self-center inputBox">
-                    <input type="text" name="hobbies" class="text-field">
-                </div>
-            </div>
-        </div>
         <% controls.radioData.forEach(data => { %>
             <% if (data.type === 'radio') { %> 
             <div class="container-fluid control">
