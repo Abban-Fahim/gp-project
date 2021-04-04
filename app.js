@@ -42,6 +42,12 @@ app.get('/data', (req, res) => {
     });
 });
 
+app.get('/deleteAll', (req, res) => {
+    Response.deleteMany({}, {}, err => {
+        err?console.error(err):res.redirect('/');
+    });
+})
+
 app.listen(process.env.PORT || 3000, () => {
     console.log('started!')
 });

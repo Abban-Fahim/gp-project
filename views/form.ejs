@@ -13,11 +13,22 @@
                     <h5>Email address</h5>
                 </div>
                 <div class="col-md-8 col-lg-8 col-sm-6 align-self-center inputBox">
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" class="text-field">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid control">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 label">
+                    <h5>What are your hobbies?</h5>
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-6 align-self-center inputBox">
+                    <input type="text" name="hobbies" class="text-field">
                 </div>
             </div>
         </div>
         <% controls.radioData.forEach(data => { %>
+            <% if (data.type === 'radio') { %> 
             <div class="container-fluid control">
                 <div class="container-fluid">
                     <h5>
@@ -28,12 +39,24 @@
                 <div class="align-self-center">
                     <% data.options.forEach(option=>{ %>
                         <div class="form-check">
-                            <input type="radio" name="<%= data.name %> " class="form-check-input" value="<%= option.value %> ">
-                            <label class="form-check-label"><%= option.label %></label>
+                            <input type="radio" name="<%= data.name %>" class="form-check-input" value="<%=option%>">
+                            <label class="form-check-label"><%=option%></label>
                         </div>
                         <% }) %>
                 </div>
             </div>
+            <% } else { %>
+                <div class="container-fluid control">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 label">
+                    <h5><%= data.title %></h5>
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-6 align-self-center inputBox">
+                    <input type="text" name="<%= data.name %>" class="text-field">
+                </div>
+            </div>
+        </div>
+            <% } %>  
             <% }) %>
                 <div class="btnBox">
                     <button class="btn btn-lg btn-danger" type="reset">Reset</button>

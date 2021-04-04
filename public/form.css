@@ -1,6 +1,6 @@
 form {
     text-align: center;
-    background-color: #48C9B0;
+    background-color: #4eb39e;
     width: 80%;
     margin: 45px auto;
     display: block;
@@ -33,11 +33,13 @@ label[for=email] {
     margin: 17px;
 }
 
-input[type=email] {
+.text-field {
     width: 80%;
     background-color: #e73c75;
     border: none;
     border-radius: 10px;
+    color: #4eb39e;
+    margin-bottom: 17px;
 }
 
 input:focus,

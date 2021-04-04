@@ -1,6 +1,6 @@
 h1 a {
     font-size: 40px;
-    color: #48C9B0 !important;
+    color: #4eb39e !important;
     text-decoration: none;
     font-family: 'Comfortaa', cursive;
     padding: inherit;
@@ -10,7 +10,7 @@ h1 a {
     font-size: 40px;
     margin: 0 12px;
     z-index: 3;
-    color: #48C9B0;
+    color: #4eb39e;
 }
 
 .hat {
@@ -49,7 +49,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #48C9B0 !important;
+    color: #4eb39e !important;
 }
 
 body {
