@@ -30,7 +30,7 @@ app.route('/form')
             response: req.body
         });
         response.save();
-        res.render('success', { email: req.body.email });
+        res.render('success', { email: req.body.response.name });
     });
 
 app.route('/video')
