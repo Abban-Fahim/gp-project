@@ -37,10 +37,17 @@ app.route('/video')
     .get((req, res) => res.render('video'));
 
 app.get('/data', (req, res) => {
-    Response.find((err, docs) => {
-        res.render('table', { data: docs });
-    });
+    res.render('auth', {success: true});
 });
+app.post('/auth', (req, res) => {
+    if (req.body.user === process.env.USER && req.body.password === process.env.PASS) {
+        Response.find((err, docs) => {
+            res.render('table', { data: docs });
+        });
+    } else {
+        res.render('auth', {success: false})
+    }
+})
 
 app.get('/delete/:id', (req, res) => {
     Response.deleteOne({ _id: req.params.id }, {}, err => {

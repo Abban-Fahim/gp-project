@@ -30,10 +30,6 @@ h5 {
     margin: 12px;
 }
 
-label[for=email] {
-    margin: 17px;
-}
-
 .text-field {
     width: 80%;
     background-color: #e73c75;

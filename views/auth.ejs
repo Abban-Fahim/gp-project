@@ -1,0 +1,12 @@
+<%- include('header') %>
+<% if (!success) { %>
+    <h3>Your username or password was incorrect!</h3>
+<% } %>
+<form method="POST" action="/auth">
+    <label for="text">Username</label>
+    <input class="text-field" id="text" type="text" name="user">
+    <br>
+    <label for="pass">Password</label>
+    <input class="text-field" id="pass" type="password" name="password">
+    <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+</form>
