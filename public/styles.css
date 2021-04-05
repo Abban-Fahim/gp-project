@@ -75,21 +75,10 @@ body {
     height: 100%;
 }
 
-.orange {
-    background-color: orangered;
-}
-
-.purple {
-    background-color: purple;
-    color: white;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 50px;
-    justify-content: center;
-    padding: 12px;
-}
-
-.green {
-    background-color: greenyellow;
+hr{
+    color:#e73c75;
+    margin: 13px;
+    width: 34px;
 }
 
 .navbar-toggler .navbar-toggler-icon {

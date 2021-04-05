@@ -42,11 +42,11 @@ app.get('/data', (req, res) => {
     });
 });
 
-app.get('/deleteAll', (req, res) => {
-    Response.deleteMany({}, {}, err => {
-        err?console.error(err):res.redirect('/');
+app.get('/delete/:id', (req, res) => {
+    Response.deleteOne({ _id: req.params.id }, {}, err => {
+        err ? console.error(err) : res.redirect('/data');
     });
-})
+});
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('started!')

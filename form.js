@@ -47,7 +47,8 @@ exports.radioData = [
     {
         title: 'Do you consume a balanced diet?',
         name: 'boolean-balanced',
-        type: 'text'
+        type: 'radio',
+        options: ['Yes', 'No', 'Sometimes']
     },
     {
         title: 'If you do practise a physical activity, how long do you do it for in one day?',
@@ -56,7 +57,7 @@ exports.radioData = [
         options: ['< 30 minutes', '< 1 hour', '< 2 hours', '> 2 hours']
     },
     {
-        title: 'How do you think irregular/ no exercise might affect ones health?',
+        title: 'How do you think irregular/no exercise might affect ones health?',
         name: 'Uaware?',
         type: 'text'
     },
