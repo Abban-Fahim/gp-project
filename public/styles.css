@@ -1,5 +1,5 @@
 h1 a {
-    font-size: 40px;
+    font-size: 35px;
     color: #4eb39e !important;
     text-decoration: none;
     font-family: 'Comfortaa', cursive;
@@ -91,15 +91,29 @@ footer{
 footer ul li::marker{
     color: #e73c75;
     font-family: 'Material Icons';
-    content: '\ea2f';
 }
+footer ul li:nth-child(1n)::marker{content: '\ea3f';}
+footer ul li:nth-child(2n)::marker{content: '\e86f';}
+footer ul li:nth-child(3n)::marker{content: '\e859';}
+footer ul li:nth-child(4n)::marker{content: '\ea2f';}
 
 ul li{
     padding: 7px;
 }
 
-li .material-icons {
+li .material-icons, li .material-icons a, .bi {
     font-size: 25px;
-    margin: 1.5px;
+    margin: 1.5px 7px;
     position: absolute;
+    color: #4eb39e !important;
+    text-decoration: none;
 }
+
+.bi{
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    top: -2px;
+}
+
+.bi-envelope:hover::before{content: '\f32c';}
