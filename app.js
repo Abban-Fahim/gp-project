@@ -55,6 +55,12 @@ app.get('/delete/:id', (req, res) => {
     });
 });
 
+app.get('/allData', (req, res) => {
+    Response.find({}, (err, found) => {
+        err ? console.error(err) : res.json(found)
+    });
+});
+
 app.listen(process.env.PORT || 3000, () => {
     console.log('started!')
 });
