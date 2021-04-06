@@ -5,7 +5,7 @@ exports.radioData = [
         type: 'text'
     },
     {
-        title: 'Please specify your gender?',
+        title: 'Please specify your gender',
         name: 'gender',
         type: 'radio',
         options: ['Male', 'Female', 'Other']
@@ -16,7 +16,7 @@ exports.radioData = [
         type: 'text'
     },
     {
-        title: 'How often do you practise your hobbies?',
+        title: 'How often do you practice your hobbies?',
         name: 'howoften',
         type: 'radio',
         options: ['Once a month', 'Once every week', 'A few times a week', 'Everyday']
@@ -51,18 +51,18 @@ exports.radioData = [
         options: ['Yes', 'No', 'Sometimes']
     },
     {
-        title: 'If you do practise a physical activity, how long do you do it for in one day?',
+        title: 'If you do practice physical activities, how long do you do it for in one day?',
         name: 'howLong?',
         type: 'radio',
         options: ['< 30 minutes', '< 1 hour', '< 2 hours', '> 2 hours']
     },
     {
-        title: 'How do you think irregular/no exercise might affect ones health?',
+        title: 'How do you think irregular/no exercise may affect ones health?',
         name: 'Uaware?',
         type: 'text'
     },
     {
-        title: 'Do you enjoy practising physical activities?',
+        title: 'Do you enjoy practicing physical activities?',
         name: 'doULike',
         type: 'radio',
         options: ['Yes', 'No', 'Occasionaly']
