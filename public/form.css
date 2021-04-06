@@ -47,6 +47,10 @@ input:focus-within {
     background-color: #992149;
 }
 
+input:invalid{
+    border: #ff3333;
+}
+
 .inputBox {
     text-align: left;
 }

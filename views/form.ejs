@@ -19,7 +19,7 @@
                 <div class="align-self-center">
                     <% data.options.forEach(option=>{ %>
                         <div class="form-check">
-                            <input type="radio" name="<%= data.name %>" class="form-check-input" value="<%=option%>">
+                            <input required type="radio" name="<%= data.name %>" class="form-check-input" value="<%=option%>">
                             <label class="form-check-label"><%=option%></label>
                         </div>
                         <% }) %>
@@ -32,7 +32,7 @@
                     <h5><%= data.title %></h5>
                 </div>
                 <div class="col-md-8 col-lg-8 col-sm-6 align-self-center inputBox">
-                    <input type="text" name="<%= data.name %>" class="text-field">
+                    <input required type="text" name="<%= data.name %>" class="text-field">
                 </div>
             </div>
         </div>
