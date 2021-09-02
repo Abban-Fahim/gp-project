@@ -4,6 +4,7 @@ const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const radioData = require("./form");
+const cors = require("cors");
 
 mongoose.connect(process.env.DB, {
   useNewUrlParser: true,
@@ -16,6 +17,7 @@ const formSchema = mongoose.Schema({
 const Response = mongoose.model("Response", formSchema);
 
 const app = express();
+app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
@@ -37,22 +39,28 @@ app
     res.render("success", { email: req.body.name });
   });
 
-app.route("/video").get((req, res) => res.render("video"));
+// app.route("/video").get((req, res) => res.render("video"));
 
-app.get("/data", (req, res) => {
-  res.render("auth", { success: true });
-});
-app.post("/auth", (req, res) => {
-  if (
-    req.body.user === process.env.USER &&
-    req.body.password === process.env.PASS
-  ) {
-    Response.find((err, docs) => {
-      res.render("table", { data: docs });
-    });
-  } else {
-    res.render("auth", { success: false });
-  }
+// app.get("/data", (req, res) => {
+//   res.render("auth", { success: true });
+// });
+// app.post("/auth", (req, res) => {
+//   if (
+//     req.body.user === process.env.USER &&
+//     req.body.password === process.env.PASS
+//   ) {
+//     Response.find((err, docs) => {
+//       res.render("table", { data: docs });
+//     });
+//   } else {
+//     res.render("auth", { success: false });
+//   }
+// });
+
+app.get("/getFormJson", (req, res) => {
+  Response.find((err, docs) => {
+    res.json(docs);
+  });
 });
 
 app.get("/delete/:id", (req, res) => {
