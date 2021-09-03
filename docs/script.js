@@ -10,7 +10,7 @@ function throttle(fn, wait) {
 const header = document.querySelector("header");
 const headerTemp = document.createElement("template");
 headerTemp.innerHTML = `<div class="container-fluid">
-  <a href="#" class="navbar-brand text-primary">
+  <a href="/gp-project" class="navbar-brand text-primary">
     <img
       src="images/gp-logo.png"
       alt="logo"
@@ -34,7 +34,7 @@ headerTemp.innerHTML = `<div class="container-fluid">
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav w-100 p-4 justify-content-end">
     <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/gp-project">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./poem.html">Poem</a>
