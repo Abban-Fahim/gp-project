@@ -33,6 +33,9 @@ headerTemp.innerHTML = `<div class="container-fluid">
   </button>
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav w-100 p-4 justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="./poem.html">Poem</a>
       </li>
