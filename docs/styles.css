@@ -1,0 +1,17 @@
+:root {
+  --primary: #6db8c5;
+  --gray: #212529;
+}
+
+body {
+  background-color: var(--gray);
+}
+
+h1 {
+  color: var(--primary);
+}
+
+header {
+  background-color: transparent;
+  transition: 0.5s;
+}
