@@ -1,10 +1,13 @@
 :root {
   --primary: #6db8c5;
+  --silver: #636262;
   --gray: #212529;
+  --white: #eeeeee;
 }
 
 body {
   background-color: var(--gray);
+  color: var(--white);
 }
 
 h1 {
@@ -14,4 +17,37 @@ h1 {
 header {
   background-color: transparent;
   transition: 0.5s;
+}
+
+form > .container-fluid {
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--silver) 2px solid;
+  transition: 0.3s;
+  font-size: 30px;
+  color: var(--primary);
+}
+
+input[type="text"]:focus {
+  background-color: #00000050;
+  outline: none;
+  border-bottom: var(--primary) 2px solid;
+}
+
+input[type="radio"] {
+  margin-right: 1.25rem;
+}
+
+.form-check {
+  margin-top: 1.125rem;
+}
+
+.btnBox {
+  margin: 20px 0;
+  padding: 12px 30px;
+  text-align: right;
 }

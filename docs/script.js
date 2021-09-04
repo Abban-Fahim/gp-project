@@ -40,7 +40,7 @@ headerTemp.innerHTML = `<div class="container-fluid">
         <a class="nav-link" href="./poem.html">Poem</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/form">Form</a>
+        <a class="nav-link" href="./form.html">Form</a>
       </li>
       </li>
     </ul>
@@ -52,9 +52,13 @@ header.appendChild(headerTemp.content);
 document.addEventListener(
   "scroll",
   throttle((e) => {
+    console.log(
+      document.documentElement.scrollTop,
+      document.querySelector("section").clientHeight
+    );
     if (
       document.documentElement.scrollTop >
-      document.getElementById("landing-img").height
+      document.querySelector("section").clientHeight
     ) {
       header.style = "background-color:#212529";
     } else {

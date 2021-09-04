@@ -36,7 +36,7 @@ app
       response: req.body,
     });
     response.save();
-    res.render("success", { email: req.body.name });
+    res.redirect("https://abban-fahim.github.io/gp-project/success.html");
   });
 
 // app.route("/video").get((req, res) => res.render("video"));
