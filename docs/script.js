@@ -52,10 +52,6 @@ header.appendChild(headerTemp.content);
 document.addEventListener(
   "scroll",
   throttle((e) => {
-    console.log(
-      document.documentElement.scrollTop,
-      document.querySelector("section").clientHeight
-    );
     if (
       document.documentElement.scrollTop >
       document.querySelector("section").clientHeight

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>S&R Health :: Home</title>
     <link rel="stylesheet" href="btsp.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -20,6 +21,30 @@
           class="img-fluid mx-auto d-block"
         />
       </section>
+      <section class="text-center container fs-5 p-5">
+        <p>
+          In today’s world, teenagers have become <u>victims of technology</u>.
+          <br />
+          Lack of physical activities has ensued a rise in
+          <u>health issues</u>.<br />
+          Unbalanced diets and unhealthy habits are becoming
+          <u>increasingly</u> more common.
+        </p>
+      </section>
+      <section class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 col-sm-12">
+            On the right is a graph showing the rise in obesity, a deadly
+            problem caused by malnutrition and lack of excercise<br />
+            <a href="https://ourworldindata.org/obesity" target="_blank"
+              ><small>(source: https://ourworldindata.org/obesity)</small></a
+            >
+          </div>
+          <div class="col-md-12 col-lg-8 col-sm-12">
+            <canvas id="obesity-graph"></canvas>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- End of mian content -->
     <footer></footer>
@@ -29,5 +54,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="charts.js"></script>
   </body>
 </html>
