@@ -8,8 +8,8 @@ function throttle(fn, wait) {
   };
 }
 const header = document.querySelector("header");
-const headerTemp = document.createElement("template");
-headerTemp.innerHTML = `<div class="container-fluid">
+const headerTempl = document.createElement("template");
+headerTempl.innerHTML = `<div class="container-fluid">
   <a href="/gp-project" class="navbar-brand text-primary">
     <img
       src="images/gp-logo.png"
@@ -47,7 +47,15 @@ headerTemp.innerHTML = `<div class="container-fluid">
   </div>
 </div>`;
 
-header.appendChild(headerTemp.content);
+const footer = document.querySelector("footer");
+const footerTempl = document.createElement("template");
+footerTempl.innerHTML = `<a href="https://github.com/Abban-Fahim/gp-project"
+><i class="bi bi-github fs-4 me-3"></i
+></a>
+<small>© Abban Fahim, Talha Ijaz, Moosa Syed. 2020 - 2021</small>`;
+
+header.appendChild(headerTempl.content);
+footer.appendChild(footerTempl.content);
 
 document.addEventListener(
   "scroll",
@@ -56,7 +64,7 @@ document.addEventListener(
       document.documentElement.scrollTop >
       document.querySelector("section").clientHeight
     ) {
-      header.style = "background-color:#212529";
+      header.style = "background-color:#2c343b";
     } else {
       header.style = "background-color:transparent";
     }
