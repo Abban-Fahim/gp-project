@@ -42,6 +42,8 @@ headerTempl.innerHTML = `<div class="container-fluid">
       <li class="nav-item">
         <a class="nav-link" href="./form.html">Form</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./poster.html">Poster</a>
       </li>
     </ul>
   </div>
