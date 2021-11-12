@@ -1,4 +1,4 @@
-let obesityData = {
+const obesityData = {
   type: "line",
   data: {
     labels: ["1990", "1995", "2000", "2005", "2010", "2015"],
@@ -47,7 +47,58 @@ let obesityData = {
   },
 };
 
+const obesityInUAEData = {
+  type: "bar",
+  data: {
+    labels: ["7 - 10", "11 - 14", "15 - 18"],
+    datasets: [
+      {
+        label: "Obesity in Boys",
+        backgroundColor: "#6db8c5",
+        borderColor: "#6db8c5",
+        data: [12.1, 6.4, 8.1],
+      },
+      {
+        label: "Obesity in Girls",
+        backgroundColor: "#f12c67",
+        borderColor: "#f12c67",
+        data: [12.7, 17.3, 17.2],
+      },
+    ],
+  },
+  options: {
+    scales: {
+      x: {
+        title: {
+          text: "Year Groups",
+          display: true,
+          font: {
+            size: 18,
+          },
+        },
+        ticks: {
+          color: "#eee",
+        },
+      },
+      y: {
+        title: {
+          text: "% of UAE population obese",
+          display: true,
+          font: {
+            size: 18,
+          },
+        },
+        ticks: {
+          color: "#eee",
+        },
+      },
+    },
+  },
+};
+
 const obesityGraph = document.getElementById("obesity-graph");
+const obesityUAEGraph = document.getElementById("obesityUAE");
 
 const chart = new Chart(obesityGraph, obesityData);
+const UAEchart = new Chart(obesityUAE, obesityInUAEData);
 chart.defaultFontColor = "#636262";
