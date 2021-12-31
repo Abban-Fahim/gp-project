@@ -27,28 +27,28 @@ app.route("/form").post((req, res) => {
   res.redirect("https://abban-fahim.github.io/gp-project/success.html");
 });
 
-<<<<<<< HEAD
-app.route('/form')
-    .get((req, res) => res.render('form', { controls: radioData }))
-    .post((req, res) => {
-        new Response({ response: req.body }).save();
-        res.render('success', { email: req.body.email });
-    });
+app
+  .route("/form")
+  .get((req, res) => res.render("form", { controls: radioData }))
+  .post((req, res) => {
+    new Response({ response: req.body }).save();
+    res.render("success", { email: req.body.email });
+  });
 
-app.route('/video')
-    .get((req, res) => res.render('video'));
+app.route("/video").get((req, res) => res.render("video"));
 
-app.get('/data', (req, res) => {
-    Response.find((err, docs) => {
-        res.render('table', { data: docs });
-    });
-  
-app.get("/getFormJson", (req, res) => {
+app.get("/data", (req, res) => {
   Response.find((err, docs) => {
-    res.json(docs);
+    res.render("table", { data: docs });
+  });
+
+  app.get("/getFormJson", (req, res) => {
+    Response.find((err, docs) => {
+      res.json(docs);
+    });
   });
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("started!");
+  console.log("Server listening!");
 });
