@@ -1,0 +1,17 @@
+table {
+    margin-top: 12px;
+    display: none;
+}
+
+th {
+    color: #48C9B0;
+}
+
+.check {
+    margin-top: -1px;
+    position: absolute;
+}
+
+.check:hover {
+    color: #e73c75;
+}

@@ -26,10 +26,7 @@ app.get('/', (req, res) => {
 app.route('/form')
     .get((req, res) => res.render('form', { controls: radioData }))
     .post((req, res) => {
-        const response = new Response({
-            response: req.body
-        });
-        response.save();
+        new Response({ response: req.body }).save();
         res.render('success', { email: req.body.email });
     });
 
