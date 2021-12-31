@@ -1,0 +1,42 @@
+{
+    type: "line",
+    data: {
+      labels: ["1995", "2000", "2005", "2010", "2016"],
+      datasets: [
+        {
+          label: "Rise in obesity in children ages 5-18",
+          backgroundColor: "#6db8c5",
+          borderColor: "#6db8c5",
+          data: ["15.738", "17.233", "18.677", "19.979", "21.388", "23.421"],
+        },
+      ],
+    },
+    options: {
+      scales: {
+        x: {
+          title: {
+            text: "Year",
+            display: true,
+            font: {
+              size: 24,
+            },
+          },
+          ticks: {
+            color: "#eee",
+          },
+        },
+        y: {
+          title: {
+            text: "% of population that is obese",
+            display: true,
+            font: {
+              size: 24,
+            },
+          },
+          ticks: {
+            color: "#eee",
+          },
+        },
+      },
+    },
+  };

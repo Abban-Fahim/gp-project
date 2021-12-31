@@ -1,28 +1,33 @@
-require('dotenv').config();
-const express = require('express');
-const ejs = require('ejs');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const radioData = require('./form');
+require("dotenv").config();
+const express = require("express");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const cors = require("cors");
 
-mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.DB, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const formSchema = mongoose.Schema({
-    response: Object
+  response: Object,
 });
-const Response = mongoose.model('Response', formSchema);
+const Response = mongoose.model("Response", formSchema);
 
 const app = express();
+app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.set('view engine', 'ejs');
-app.use(express.static('public'));
-app.use('/file', express.static('static'))
 
-app.get('/', (req, res) => {
-    res.render('home');
+app.route("/form").post((req, res) => {
+  const response = new Response({
+    response: req.body,
+  });
+  response.save();
+  res.redirect("https://abban-fahim.github.io/gp-project/success.html");
 });
 
+<<<<<<< HEAD
 app.route('/form')
     .get((req, res) => res.render('form', { controls: radioData }))
     .post((req, res) => {
@@ -37,8 +42,13 @@ app.get('/data', (req, res) => {
     Response.find((err, docs) => {
         res.render('table', { data: docs });
     });
+  
+app.get("/getFormJson", (req, res) => {
+  Response.find((err, docs) => {
+    res.json(docs);
+  });
 });
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log('started!')
+  console.log("started!");
 });
