@@ -98,3 +98,15 @@ input[type="radio"] {
   font-size: 25px;
   text-align: center;
 }
+
+.row{
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.row img {
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 2px dashed var(--primary);
+}
