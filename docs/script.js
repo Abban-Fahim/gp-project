@@ -46,7 +46,7 @@ headerTempl.innerHTML = `<div class="container-fluid">
         <a class="nav-link" href="./poster.html">Poster</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./articles.html">Publications</a>
+        <a class="nav-link" href="./articles.html">Articles</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./statistics.html">Statistics</a>
