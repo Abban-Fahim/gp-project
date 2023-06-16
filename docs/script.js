@@ -10,7 +10,7 @@ function throttle(fn, wait) {
 const header = document.querySelector("header");
 const headerTempl = document.createElement("template");
 headerTempl.innerHTML = `<div class="container-fluid">
-  <a href="./index.html" class="navbar-brand text-primary">
+  <a href="/" class="navbar-brand text-primary">
     <img
       src="images/gp-logo.png"
       alt="logo"
@@ -53,9 +53,7 @@ const footerTempl = document.createElement("template");
 footerTempl.innerHTML = `<a href="https://github.com/Abban-Fahim/gp-project"
 ><i class="bi bi-github fs-4 me-3"></i
 ></a>
-<small>Sports & Recreational Health | Abban Fahim, Talha Ijaz, Moosa Syed. </ small><a href="mailto:atm.sr.health@gmail.com"
-><i class="bi bi-envelope"></i
-></a>`;
+<small>Sports & Recreational Health | Abban Fahim, Talha Ijaz, Moosa Syed. </ small>`;
 
 header.appendChild(headerTempl.content);
 footer.appendChild(footerTempl.content);
