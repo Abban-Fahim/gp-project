@@ -53,7 +53,9 @@ const footerTempl = document.createElement("template");
 footerTempl.innerHTML = `<a href="https://github.com/Abban-Fahim/gp-project"
 ><i class="bi bi-github fs-4 me-3"></i
 ></a>
-<small>Sports & Recreational Health | Abban Fahim, Talha Ijaz, Moosa Syed. </ small>`;
+<small>Sports & Recreational Health | Abban Fahim, Talha Ijaz, Moosa Syed. </ small><a href="mailto:atm.sr.health@gmail.com"
+><i class="bi bi-envelope"></i
+></a>`;
 
 header.appendChild(headerTempl.content);
 footer.appendChild(footerTempl.content);
