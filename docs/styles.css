@@ -3,6 +3,7 @@
 :root {
   --primary: #6db8c5;
   --silver: #636262;
+  --silver-transparent: #63626293;
   --gray: #212529;
   --gray-accent: #2c343b;
   --white: #eeeeee;
@@ -22,6 +23,12 @@ u {
   text-decoration: none;
   font-weight: bold;
   color: var(--primary);
+}
+
+span {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--pink);
 }
 
 b{
@@ -49,8 +56,9 @@ form > .container-fluid {
   border-radius: 20px;
   background-color: #00000050;
   margin: 12px 0;
-  transition-duration: .3s;
+  transition-duration: 120ms;
   text-decoration: none;
+  border: var(--gray) solid .1em;
 }
 
 .article i {
@@ -59,9 +67,16 @@ form > .container-fluid {
 }
 
 .article:hover{
-  transform: scale(1.07);
+  transform: scale(1.06);
   background-color: var(--gray-accent);
-  box-shadow: 0 0 5px var(--silver);
+  box-shadow: 0 0 7px 1px var(--silver-transparent);
+  transition-duration: 120ms;
+}
+
+.article:active {
+  transform: scale(1.05);
+  transition-duration: 50ms;
+  background-color: var(--silver-transparent);
 }
 
 input[type="text"] {
